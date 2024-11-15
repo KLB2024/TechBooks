@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBooks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TechBooks</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Qual será sua próxima leitura?" />
+            <button><img src="lupa.jpg" alt="Buscar" width="20" height="15"></button>
+        </div>
+        <nav>
+            <button onclick="location.href='perfil.html'">Perfil</button>
+            <button onclick="location.href='favoritos.html'">Favoritos</button>
+            <button onclick="location.href='carrinho.html'">Carrinho</button>
+            <button onclick="location.href='categorias.html'">Categorias</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="novos-lancamentos">
+            <h2>Novos Lançamentos</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-container">
+                    <img src="img2.jpg" alt="Livro 2" width="550" height="400">
+                    <img src="img3.jpg" alt="Livro 3" width="550" height="400">
+                    <img src="img4.jpg" alt="Livro 4" width="550" height="400">
+                    <img src="img5.jpg" alt="Livro 5" width="550" height="400">
+                    <img src="img6.jpg" alt="Livro 6" width="550" height="400">
+                    <img src="img7.jpg" alt="Livro 7" width="550" height="400">
+                    <img src="img8.jpg" alt="Livro 8" width="550" height="400">
+                    <img src="img9.jpg" alt="Livro 9" width="550" height="400">
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </section>
+        <section id="autora-do-mes">
+            <h2>Autora do Mês</h2>
+            <div class="author-card">
+                <img src="autora.jpg" alt="Autora" />
+                <div class="author-info">
+                    <h3>Margaret O. Smith</h3>
+                    <p>Margaret O. Smith é uma autora e especialista em tecnologia da informação, com mais de 20 anos de experiência na indústria de TI. Ela possui um Ph.D. em Ciência da Computação e já trabalhou em diversas empresas de tecnologia, onde se destacou em projetos de desenvolvimento de software e inovação tecnológica.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="topicos-visitados">
+            <h2>Tópicos Visitados Recentemente</h2>
+            <div class="topics">
+                <div class="topic">Android</div>
+                <div class="topic">Marketing digital</div>
+                <div class="topic">HTML e CSS</div>
+                <div class="topic">Python</div>
+            </div>
+        </section>
+
+        <section id="inscricao">
+            <h2>Fique por dentro das novidades!</h2>
+            <p>Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" placeholder="Seu e-mail" />
+            <button>Inscrever-se</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TechBooks. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
